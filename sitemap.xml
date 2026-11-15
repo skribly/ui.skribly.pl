@@ -96,6 +96,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/patterns/layout/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/patterns/layout/"/>
   </url>
+  <url><loc>https://ui.skribly.pl/patterns/images/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/patterns/images/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/patterns/images/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/patterns/images/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/patterns/images/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/patterns/images/"/>
+  </url>
   <url><loc>https://ui.skribly.pl/patterns/sidebar/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/patterns/sidebar/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/patterns/sidebar/"/>
@@ -1439,6 +1447,30 @@
   <url><loc>https://ui.skribly.pl/pl/components/icons/any-lucide-glyph/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/icons/any-lucide-glyph/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/icons/any-lucide-glyph/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/components/lightbox/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/lightbox/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/lightbox/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/lightbox/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/lightbox/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/lightbox/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/components/lightbox/lightbox/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/lightbox/lightbox/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/lightbox/lightbox/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/lightbox/lightbox/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/lightbox/lightbox/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/lightbox/lightbox/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/components/lightbox/lightbox-one-picture/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/lightbox/lightbox-one-picture/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/lightbox/lightbox-one-picture/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/lightbox/lightbox-one-picture/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/lightbox/lightbox-one-picture/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/lightbox/lightbox-one-picture/"/>
   </url>
   <url><loc>https://ui.skribly.pl/components/media/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/media/"/>
