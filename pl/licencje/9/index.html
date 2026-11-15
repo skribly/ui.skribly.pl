@@ -1,0 +1,2646 @@
+<!DOCTYPE html><html lang="pl" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Licencje, strona 9 z 9 | Skribly UI</title><meta name="description" content="Oprogramowanie open source i fonty, które dostarczają Skribly UI i ta strona, każde z licencją i repozytorium."><link rel="canonical" href="https://ui.skribly.pl/pl/licencje/9/"><link rel="alternate" hreflang="en" href="https://ui.skribly.pl/licenses/9/"><link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/licencje/9/"><link rel="alternate" hreflang="x-default" href="https://ui.skribly.pl/licenses/9/"><script>(function prepaint() {
+	const root = document.documentElement;
+	root.classList.add("sk-js");
+	const read = (name) => {
+		const match = document.cookie.match(new RegExp(`(?:^|;\\s*)${name}=([^;]*)`));
+		if (match?.[1]) try {
+			return decodeURIComponent(match[1]);
+		} catch {
+			return null;
+		}
+		try {
+			return localStorage.getItem(name);
+		} catch {
+			return null;
+		}
+	};
+	const theme = read("sk-theme");
+	if (theme === "light" || theme === "dark" || theme === "contrast") root.setAttribute("data-theme", theme);
+	root.dataset["themeChoice"] = theme === "light" || theme === "dark" || theme === "contrast" ? theme : "system";
+	if (read("sk-motion") === "paused") root.dataset["skMotion"] = "paused";
+	try {
+		if (sessionStorage.getItem("sk-corner") === "hidden") root.dataset["skCorner"] = "hidden";
+	} catch {}
+	try {
+		const settings = JSON.parse(read("sk-a11y") ?? "null");
+		if (!settings) return;
+		const allowed = [
+			"grayscale",
+			"contrast",
+			"invert",
+			"light",
+			"links",
+			"font",
+			"motion",
+			"focus"
+		];
+		const colours = [
+			"grayscale",
+			"contrast",
+			"invert",
+			"light"
+		];
+		const on = Array.isArray(settings.on) ? settings.on.filter((item) => typeof item === "string" && allowed.includes(item)) : [];
+		let colour = false;
+		for (const option of on) {
+			if (colours.includes(option)) {
+				if (colour) continue;
+				colour = true;
+			}
+			root.classList.add(`sk-a11y-${option}`);
+		}
+		if ([
+			110,
+			120,
+			130,
+			140
+		].includes(settings.size)) root.classList.add(`sk-a11y-size-${String(settings.size)}`);
+		if (on.includes("motion")) root.classList.add("a11y-reduce-motion");
+		if (on.includes("focus")) root.classList.add("a11y-strong-focus");
+	} catch {}
+})();</script><meta name="color-scheme" content="light dark"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#fffdf8"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111318"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="preload" href="/_astro/inter-latin-wght-normal.Dx4kXJAl.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/_astro/bricolage-grotesque-latin-wght-normal.DLoelf7F.woff2" as="font" type="font/woff2" crossorigin><link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest"><meta property="og:type" content="website"><meta property="og:site_name" content="Skribly UI"><meta property="og:locale" content="pl_PL"><meta property="og:url" content="https://ui.skribly.pl/pl/licencje/9/"><meta property="og:title" content="Licencje, strona 9 z 9 | Skribly UI"><meta property="og:description" content="Oprogramowanie open source i fonty, które dostarczają Skribly UI i ta strona, każde z licencją i repozytorium."><meta property="og:image" content="https://ui.skribly.pl/og/pl/licencje/9/image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Licencje, strona 9 z 9 | Skribly UI"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Licencje, strona 9 z 9 | Skribly UI"><meta name="twitter:description" content="Oprogramowanie open source i fonty, które dostarczają Skribly UI i ta strona, każde z licencją i repozytorium."><meta name="twitter:image" content="https://ui.skribly.pl/og/pl/licencje/9/image.png"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://skribly.pl/#organization","name":"Skribly","url":"https://skribly.pl/","logo":"https://skribly.pl/img/icons/icon-512.png","sameAs":["https://docs.skribly.pl/","https://ui.skribly.pl/"]},{"@type":"WebSite","@id":"https://ui.skribly.pl/#website","name":"Skribly UI","url":"https://ui.skribly.pl/","inLanguage":"pl","description":"Oprogramowanie open source i fonty, które dostarczają Skribly UI i ta strona, każde z licencją i repozytorium.","publisher":{"@id":"https://skribly.pl/#organization"}},{"@type":"WebPage","@id":"https://ui.skribly.pl/pl/licencje/9/#page","url":"https://ui.skribly.pl/pl/licencje/9/","name":"Licencje, strona 9 z 9 | Skribly UI","description":"Oprogramowanie open source i fonty, które dostarczają Skribly UI i ta strona, każde z licencją i repozytorium.","inLanguage":"pl","isPartOf":{"@id":"https://ui.skribly.pl/#website"},"publisher":{"@id":"https://skribly.pl/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Skribly UI","item":"https://ui.skribly.pl/pl/"},{"@type":"ListItem","position":2,"name":"Licencje","item":"https://ui.skribly.pl/pl/licencje/"},{"@type":"ListItem","position":3,"name":"Licencje, strona 9 z 9","item":"https://ui.skribly.pl/pl/licencje/9/"}]}]}</script><link rel="preload" href="/_astro/inter-polish-wght-normal.DRSLVgdz.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/_astro/bricolage-grotesque-polish-wght-normal.B3e9LN4w.woff2" as="font" type="font/woff2" crossorigin><link rel="prev" href="https://ui.skribly.pl/pl/licencje/8/"><link rel="stylesheet" href="/_astro/Page.BkdMOryx.css"></head><body class="sk-page"><a class="sk-skip-link" href="#content">Przejdź do treści</a><header class="sk-site-header sk-product--ui" data-sk-header><div class="sk-container sk-container--wide sk-site-header__bar"><div class="sk-site-header__brand"><a class="sk-site-header__home" href="/pl/" aria-label="Skribly UI, strona główna"><svg class="sk-logo sk-logo--ui" viewBox="0 0 64 64" width="2.125rem" height="2.125rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-ui)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M41.2 19.6h.01M46.8 19.6h.01M41.2 25.4h.01M46.8 25.4h.01" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-ui)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-ui)" opacity="0.55"/></svg><span class="sk-site-header__name">Skribly UI</span></a><details class="sk-dropdown sk-ecosystem"><summary class="sk-icon-button sk-ecosystem__toggle" aria-label="Przełącz produkt" title="Przełącz produkt"><svg class="sk-icon sk-dropdown__chevron" viewBox="0 0 24 24" focusable="false" data-icon="chevron.down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="sk-dropdown__panel"><p class="sk-ecosystem__title" id="sk-ecosystem-ui">Produkty Skribly</p><ul class="sk-ecosystem__list" aria-labelledby="sk-ecosystem-ui"><li><a class="sk-ecosystem__item sk-product--skribly" href="https://skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--skribly" viewBox="0 0 64 64" width="2.25rem" height="2.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-accent)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-accent)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-accent)" opacity="0.55"/></svg><span><strong>Skribly</strong><span>Jedno miejsce dla agentów, zadań i zasad</span></span></a></li><li><a class="sk-ecosystem__item sk-product--agent" href="https://skribly.pl/pl/apps/skribly-agent/" hreflang="pl"><svg class="sk-logo sk-logo--agent" viewBox="0 0 64 64" width="2.25rem" height="2.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-agent)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.6 19.4l3.6 3.6-3.6 3.6M45.6 28.4h2.6" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-agent)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-agent)" opacity="0.55"/></svg><span><strong>Skribly Agent</strong><span>Tu pracują agenci</span></span></a></li><li><a class="sk-ecosystem__item sk-product--tracker" href="https://skribly.pl/pl/apps/skribly-tracker/" hreflang="pl"><svg class="sk-logo sk-logo--tracker" viewBox="0 0 64 64" width="2.25rem" height="2.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-tracker)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.4 23.6l2.8 2.8 4.8-5.4" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-tracker)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-tracker)" opacity="0.55"/></svg><span><strong>Skribly Tracker</strong><span>Tu powstają zadania</span></span></a></li><li><a class="sk-ecosystem__item sk-product--skills" href="https://skribly.pl/pl/apps/agent-skills/" hreflang="pl"><svg class="sk-logo sk-logo--skills" viewBox="0 0 64 64" width="2.25rem" height="2.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-skills)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M44 18.6v8.8M39.6 23h8.8" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-skills)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-skills)" opacity="0.55"/></svg><span><strong>agent-skills</strong><span>Tu mieszkają zasady</span></span></a></li><li><a class="sk-ecosystem__item sk-product--docs" href="https://docs.skribly.pl/"><svg class="sk-logo sk-logo--docs" viewBox="0 0 64 64" width="2.25rem" height="2.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-docs)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.4 19h7.2M40.4 23h7.2M40.4 27h4.4" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-docs)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-docs)" opacity="0.55"/></svg><span><strong>Skribly Docs</strong><span>Poradniki i dokumentacja</span></span></a></li><li><a class="sk-ecosystem__item sk-product--ui" href="https://ui.skribly.pl/" aria-current="true"><svg class="sk-logo sk-logo--ui" viewBox="0 0 64 64" width="2.25rem" height="2.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-ui)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M41.2 19.6h.01M46.8 19.6h.01M41.2 25.4h.01M46.8 25.4h.01" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-ui)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-ui)" opacity="0.55"/></svg><span><strong>Skribly UI</strong><span>Tokeny i komponenty</span></span><span class="sk-ecosystem__here">Tu jesteś</span></a></li></ul><p class="sk-ecosystem__title" id="sk-ecosystem-ui-channels">Bądź na bieżąco</p><ul class="sk-ecosystem__list" aria-labelledby="sk-ecosystem-ui-channels"><li><a class="sk-ecosystem__item sk-product--newsletter" href="https://newsletter.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--newsletter" viewBox="0 0 64 64" width="2.25rem" height="2.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-newsletter)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.2 19.6h7.6v6.8h-7.6zM40.6 20.2l3.4 2.8 3.4-2.8" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-newsletter)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-newsletter)" opacity="0.55"/></svg><span><strong>Skribly Newsletter</strong><span>Wiadomości o AI co tydzień, każda ze źródłem</span></span></a></li></ul><p class="sk-ecosystem__title" id="sk-ecosystem-ui-services">Usługi</p><ul class="sk-ecosystem__list" aria-labelledby="sk-ecosystem-ui-services"><li><a class="sk-ecosystem__item sk-product--status" href="https://status.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--status" viewBox="0 0 64 64" width="2.25rem" height="2.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-status)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M39.6 23.6h2.2l1.4-3.6 2.4 6.8 1.4-3.2h1.4" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-status)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-status)" opacity="0.55"/></svg><span><strong>Skribly Status</strong><span>Czy każda usługa działa</span></span></a></li><li><a class="sk-ecosystem__item sk-product--trust" href="https://trust.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--trust" viewBox="0 0 64 64" width="2.25rem" height="2.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-trust)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M41.8 22.6v-3h4.4v3M40.8 24.2h6.4v2.8h-6.4z" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-trust)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-trust)" opacity="0.55"/></svg><span><strong>Skribly Trust</strong><span>Bezpieczeństwo, prywatność i dostępność</span></span></a></li><li><a class="sk-ecosystem__item sk-product--tools" href="https://tools.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--tools" viewBox="0 0 64 64" width="2.25rem" height="2.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-tools)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.8 27.2L46 22M43.8 19.8l4.4 4.4" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-tools)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-tools)" opacity="0.55"/></svg><span><strong>Skribly Tools</strong><span>Małe narzędzia w przeglądarce</span></span></a></li><li><a class="sk-ecosystem__item sk-product--projects" href="https://projects.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--projects" viewBox="0 0 64 64" width="2.25rem" height="2.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-projects)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.4 21.8h4.8v4.8h-4.8zM43 21.8v-2.6h4.8v4.8h-2.6" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-projects)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-projects)" opacity="0.55"/></svg><span><strong>Skribly Projects</strong><span>Każda część i jej postęp</span></span></a></li><li><a class="sk-ecosystem__item sk-product--discord" href="https://dc.skribly.pl/pl/" hreflang="pl"><svg class="sk-icon sk-icon--duo sk-ecosystem__icon" viewBox="0 0 24 24" focusable="false" data-icon="content.comment" aria-hidden="true"><g class="sk-icon__fill"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></g><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></svg><span><strong>Discord</strong><span>Rozmowy z osobami, które budują Skribly</span></span></a></li></ul></div></details></div><div class="sk-site-header__quick"><button class="sk-search-button sk-site-header__wide" type="button" data-sk-search-open data-sk-needs-js aria-haspopup="dialog" aria-controls="sk-search" aria-keyshortcuts="Control+K /"><svg class="sk-icon" viewBox="0 0 24 24" focusable="false" data-icon="action.search" aria-hidden="true"><g class="sk-icon__fill"><circle cx="11" cy="11" r="8"></circle></g><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg><span>Szukaj</span><kbd class="sk-kbd" aria-hidden="true">Ctrl K</kbd></button><button class="sk-icon-button sk-site-header__narrow" type="button" data-sk-search-open data-sk-needs-js aria-label="Szukaj" aria-haspopup="dialog" aria-controls="sk-search" aria-keyshortcuts="Control+K /"><svg class="sk-icon" viewBox="0 0 24 24" focusable="false" data-icon="action.search" aria-hidden="true"><g class="sk-icon__fill"><circle cx="11" cy="11" r="8"></circle></g><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></button><button class="sk-icon-button" type="button" data-sk-a11y-open data-sk-needs-js aria-controls="sk-a11y-panel" aria-expanded="false" aria-label="Dostępność" title="Otwórz ustawienia dostępności"><svg class="sk-icon" viewBox="0 0 24 24" focusable="false" data-icon="nav.accessibility" aria-hidden="true"><g class="sk-icon__fill"><circle cx="16" cy="4" r="1"></circle></g><circle cx="16" cy="4" r="1"></circle><path d="m18 19 1-7-6 1"></path><path d="m5 8 3-3 5.5 3-2.36 3.5"></path><path d="M4.24 14.5a5 5 0 0 0 6.88 6"></path><path d="M13.76 17.5a5 5 0 0 0-6.88-6"></path></svg></button><button class="sk-icon-button sk-site-header__menu-toggle" type="button" data-sk-menu-toggle data-sk-needs-js aria-expanded="false" aria-controls="sk-site-drawer-ui" aria-label="Menu" data-open="Menu" data-close="Zamknij menu"><span class="sk-burger" aria-hidden="true"><span></span><span></span><span></span></span></button></div><div class="sk-site-header__drawer" id="sk-site-drawer-ui"><nav class="sk-site-nav" aria-label="Główna nawigacja"><ul class="sk-site-nav__list"><li><a class="sk-site-nav__link" href="/pl/start/">Pierwsze kroki</a></li><li><details class="sk-dropdown" name="sk-site-nav"><summary>Podstawy<svg class="sk-icon sk-dropdown__chevron" viewBox="0 0 24 24" focusable="false" data-icon="chevron.down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="sk-dropdown__panel"><ul class="sk-site-nav__sub sk-site-nav__sub--cols"><li><a href="/pl/tokens/"><strong>Tokeny projektowe</strong></a></li><li><a href="/pl/themes/"><strong>Motywy i gęstość</strong></a></li><li><a href="/pl/icons/"><strong>Ikony</strong></a></li><li><a href="/pl/plain-css/"><strong>Czysty CSS</strong></a></li><li><a href="/pl/accessibility/"><strong>Dostępność</strong></a></li><li><a href="/pl/brand/"><strong>Marka</strong></a></li></ul></div></details></li><li><details class="sk-dropdown" name="sk-site-nav"><summary>Komponenty<svg class="sk-icon sk-dropdown__chevron" viewBox="0 0 24 24" focusable="false" data-icon="chevron.down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="sk-dropdown__panel"><ul class="sk-site-nav__sub sk-site-nav__sub--cols"><li><a href="/pl/components/actions/"><strong>Akcje</strong></a></li><li><a href="/pl/components/agents/"><strong>Agenci</strong></a></li><li><a href="/pl/components/assistant/"><strong>Asystent</strong></a></li><li><a href="/pl/components/brand/"><strong>Marka</strong></a></li><li><a href="/pl/components/charts/"><strong>Wykresy</strong></a></li><li><a href="/pl/components/code/"><strong>Kod</strong></a></li><li><a href="/pl/components/content/"><strong>Treść</strong></a></li><li><a href="/pl/components/conversation/"><strong>Rozmowa</strong></a></li><li><a href="/pl/components/data/"><strong>Dane</strong></a></li><li><a href="/pl/components/feedback/"><strong>Komunikaty i stany</strong></a></li><li><a href="/pl/components/forms/"><strong>Formularze</strong></a></li><li><a href="/pl/components/icons/"><strong>Ikony</strong></a></li><li><a href="/pl/components/media/"><strong>Media</strong></a></li><li><a href="/pl/components/navigation/"><strong>Nawigacja</strong></a></li><li><a href="/pl/components/onboarding/"><strong>Onboarding</strong></a></li><li><a href="/pl/components/ops/"><strong>Operacje</strong></a></li><li><a href="/pl/components/overlays/"><strong>Nakładki</strong></a></li><li><a href="/pl/components/pages/"><strong>Strony</strong></a></li><li><a href="/pl/components/search/"><strong>Wyszukiwanie</strong></a></li><li><a href="/pl/components/shell/"><strong>Powłoka</strong></a></li><li><a href="/pl/components/surfaces/"><strong>Powierzchnie</strong></a></li><li><a href="/pl/components/theme/"><strong>Motyw i dostępność</strong></a></li><li><a href="/pl/components/tracker/"><strong>Tracker</strong></a></li></ul><p class="sk-site-nav__all"><a href="/pl/components/"><span>Komponenty</span><span class="sk-site-nav__all-hint">Zobacz wszystko</span><svg class="sk-icon" viewBox="0 0 24 24" focusable="false" data-icon="arrow.right" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a></p></div></details></li><li><a class="sk-site-nav__link" href="/pl/icons/">Ikony</a></li><li><details class="sk-dropdown" name="sk-site-nav"><summary>Wzorce<svg class="sk-icon sk-dropdown__chevron" viewBox="0 0 24 24" focusable="false" data-icon="chevron.down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="sk-dropdown__panel"><ul class="sk-site-nav__sub"><li><a href="/pl/patterns/messages/"><strong>Komunikaty</strong></a></li><li><a href="/pl/patterns/forms/"><strong>Formularze i walidacja</strong></a></li><li><a href="/pl/patterns/layout/"><strong>Układ i gęstość</strong></a></li><li><a href="/pl/patterns/sidebar/"><strong>Panel boczny</strong></a></li></ul></div></details></li><li><a class="sk-site-nav__link" href="/pl/changelog/">Historia zmian</a></li></ul></nav><div class="sk-site-header__tools"><nav class="sk-language-switch" aria-label="Język"><ul><li><a href="/licenses/9/" lang="en" hreflang="en">English</a></li><li><span lang="pl" aria-current="true">Polski</span></li></ul></nav><fieldset class="sk-theme-switch" data-sk-theme-switch><legend class="sk-visually-hidden">Motyw</legend><label title="Dzień"><input type="radio" name="sk-theme-dmcz6g" value="light"><svg class="sk-icon" viewBox="0 0 24 24" focusable="false" data-icon="theme.light" aria-hidden="true"><g class="sk-icon__fill"><circle cx="12" cy="12" r="4"></circle></g><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><span class="sk-visually-hidden">Dzień</span></label><label title="Noc"><input type="radio" name="sk-theme-dmcz6g" value="dark"><svg class="sk-icon" viewBox="0 0 24 24" focusable="false" data-icon="theme.dark" aria-hidden="true"><g class="sk-icon__fill"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></g><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg><span class="sk-visually-hidden">Noc</span></label><label title="Wysoki kontrast"><input type="radio" name="sk-theme-dmcz6g" value="contrast"><svg class="sk-icon" viewBox="0 0 24 24" focusable="false" data-icon="theme.contrast" aria-hidden="true"><g class="sk-icon__fill"><circle cx="12" cy="12" r="10"></circle><path d="M12 18a6 6 0 0 0 0-12v12z"></path></g><circle cx="12" cy="12" r="10"></circle><path d="M12 18a6 6 0 0 0 0-12v12z"></path></svg><span class="sk-visually-hidden">Wysoki kontrast</span></label><label title="Jak w systemie"><input type="radio" name="sk-theme-dmcz6g" value="system" checked><svg class="sk-icon" viewBox="0 0 24 24" focusable="false" data-icon="theme.system" aria-hidden="true"><g class="sk-icon__fill"><rect rx="2" x="2" y="3" width="20" height="14"></rect></g><rect rx="2" x="2" y="3" width="20" height="14"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg><span class="sk-visually-hidden">Jak w systemie</span></label></fieldset><script type="module" src="/_astro/ThemeSwitch.astro_astro_type_script_index_0_lang.DcZSn2ne.js"></script></div></div></div></header><script type="module" src="/_astro/SiteHeader.astro_astro_type_script_index_0_lang.C7ESqmu-.js"></script><main class="sk-page__main sk-page__main--default" id="content" tabindex="-1" data-pagefind-body><nav class="sk-breadcrumbs" aria-label="Jesteś tutaj" data-pagefind-ignore><ol><li><a href="/pl/">Skribly UI</a></li><li><a href="/pl/licencje/">Licencje</a></li><li><span aria-current="page">Licencje, strona 9 z 9</span></li></ol></nav><section class="sk-licenses" aria-labelledby="sk-licenses-title"><h1 id="sk-licenses-title">Licencje oprogramowania firm trzecich</h1><p>Oprogramowanie i fonty, które ta strona dostarcza, każde z licencją i tekstem, który autorzy proszą zachować.</p><p><a href="/third-party-licenses.txt">Wersja tekstowa</a></p><p>Pozycje 201–214 z 214 · <a href="/pl/licencje/wszystkie/">Pokaż wszystko na jednej stronie</a></p><ul class="sk-licenses__list"><li class="sk-licenses__item"><h2>vite 8.3.6</h2><p><span>MIT</span> · <a href="https://github.com/vitejs/vite" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">LICENSE.md</h3><pre tabindex="0" lang="en"># Vite core license
+Vite is released under the MIT license:
+
+MIT License
+
+Copyright (c) 2019-present, VoidZero Inc. and Vite contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+# Licenses of bundled dependencies
+The published Vite artifact additionally contains code with the following licenses:
+BSD-2-Clause, CC0-1.0, ISC, MIT
+
+# Bundled dependencies:
+## @jridgewell/gen-mapping, @jridgewell/remapping, @jridgewell/sourcemap-codec, @jridgewell/trace-mapping
+License: MIT
+By: Justin Ridgewell
+Repositories: https://github.com/jridgewell/sourcemaps, https://github.com/jridgewell/sourcemaps, https://github.com/jridgewell/sourcemaps, https://github.com/jridgewell/sourcemaps
+
+&gt; Copyright 2024 Justin Ridgewell &lt;justin@ridgewell.name&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## @jridgewell/resolve-uri
+License: MIT
+By: Justin Ridgewell
+Repository: https://github.com/jridgewell/resolve-uri
+
+&gt; Copyright 2019 Justin Ridgewell &lt;jridgewell@google.com&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## @polka/compression
+License: MIT
+Repository: https://github.com/lukeed/polka
+
+---------------------------------------
+
+## @polka/url
+License: MIT
+By: Luke Edwards
+Repository: https://github.com/lukeed/polka
+
+---------------------------------------
+
+## @rollup/plugin-alias, @rollup/plugin-dynamic-import-vars, @rollup/pluginutils
+License: MIT
+By: Johannes Stein
+Repository: https://github.com/rollup/plugins
+
+License: MIT
+By: LarsDenBakker
+Repository: https://github.com/rollup/plugins
+
+License: MIT
+By: Rich Harris
+Repository: https://github.com/rollup/plugins
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2019 RollupJS Plugin Contributors (https://github.com/rollup/plugins/graphs/contributors)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## @vitest/utils
+License: MIT
+Repository: https://github.com/vitest-dev/vitest
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) 2021-Present VoidZero Inc. and Vitest contributors
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## @voidzero-dev/vite-task-client
+License: MIT
+Repository: https://github.com/voidzero-dev/vite-task
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) 2026-present, VoidZero Inc.
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## anymatch
+License: ISC
+By: Elan Shanker
+Repository: https://github.com/micromatch/anymatch
+
+&gt; The ISC License
+&gt; 
+&gt; Copyright (c) 2019 Elan Shanker, Paul Miller (https://paulmillr.com)
+&gt; 
+&gt; Permission to use, copy, modify, and/or distribute this software for any
+&gt; purpose with or without fee is hereby granted, provided that the above
+&gt; copyright notice and this permission notice appear in all copies.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+&gt; WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+&gt; MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+&gt; ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+&gt; WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+&gt; ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
+&gt; IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---------------------------------------
+
+## artichokie
+License: MIT
+By: sapphi-red, Evan You
+Repository: https://github.com/sapphi-red/artichokie
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) 2020-present, Yuxi (Evan) You
+&gt; Copyright (c) 2023-present, sapphi-red
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## binary-extensions
+License: MIT
+By: Sindre Sorhus
+Repository: https://github.com/sindresorhus/binary-extensions
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) Sindre Sorhus &lt;sindresorhus@gmail.com&gt; (https://sindresorhus.com)
+&gt; Copyright (c) Paul Miller (https://paulmillr.com)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## braces, fill-range, is-number
+License: MIT
+By: Jon Schlinkert, Brian Woodward, Elan Shanker, Eugene Sharygin, hemanth.hm
+Repository: https://github.com/micromatch/braces
+
+License: MIT
+By: Jon Schlinkert, Edo Rivai, Paul Miller, Rouven Weßling
+Repository: https://github.com/jonschlinkert/fill-range
+
+License: MIT
+By: Jon Schlinkert, Olsten Larck, Rouven Weßling
+Repository: https://github.com/jonschlinkert/is-number
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2014-present, Jon Schlinkert.
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## bundle-name, default-browser, default-browser-id, define-lazy-prop, is-docker, is-inside-container, is-wsl, open, run-applescript, wsl-utils
+License: MIT
+By: Sindre Sorhus
+Repositories: https://github.com/sindresorhus/bundle-name, https://github.com/sindresorhus/default-browser, https://github.com/sindresorhus/default-browser-id, https://github.com/sindresorhus/define-lazy-prop, https://github.com/sindresorhus/is-docker, https://github.com/sindresorhus/is-inside-container, https://github.com/sindresorhus/is-wsl, https://github.com/sindresorhus/open, https://github.com/sindresorhus/run-applescript, https://github.com/sindresorhus/wsl-utils
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) Sindre Sorhus &lt;sindresorhus@gmail.com&gt; (https://sindresorhus.com)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## cac
+License: MIT
+By: egoist, Kevin Deng &lt;sxzz@sxzz.moe&gt;
+Repository: https://github.com/cacjs/cac
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) EGOIST &lt;0x142857@gmail.com&gt; (https://github.com/egoist)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## chokidar
+License: MIT
+By: Paul Miller, Elan Shanker
+Repository: https://github.com/paulmillr/chokidar
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2012-2019 Paul Miller (https://paulmillr.com), Elan Shanker
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the “Software”), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## connect
+License: MIT
+By: TJ Holowaychuk, Douglas Christopher Wilson, Jonathan Ong, Tim Caswell
+Repository: https://github.com/senchalabs/connect
+
+&gt; (The MIT License)
+&gt; 
+&gt; Copyright (c) 2010 Sencha Inc.
+&gt; Copyright (c) 2011 LearnBoost
+&gt; Copyright (c) 2011-2014 TJ Holowaychuk
+&gt; Copyright (c) 2015 Douglas Christopher Wilson
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &#39;Software&#39;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+&gt; IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+&gt; CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+&gt; TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+&gt; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## convert-source-map
+License: MIT
+By: Thorsten Lorenz
+Repository: https://github.com/thlorenz/convert-source-map
+
+&gt; Copyright 2013 Thorsten Lorenz. 
+&gt; All rights reserved.
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person
+&gt; obtaining a copy of this software and associated documentation
+&gt; files (the &quot;Software&quot;), to deal in the Software without
+&gt; restriction, including without limitation the rights to use,
+&gt; copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the
+&gt; Software is furnished to do so, subject to the following
+&gt; conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+&gt; OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+&gt; NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+&gt; HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+&gt; WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+&gt; FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+&gt; OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## cors
+License: MIT
+By: Troy Goode
+Repository: https://github.com/expressjs/cors
+
+&gt; (The MIT License)
+&gt; 
+&gt; Copyright (c) 2013 Troy Goode &lt;troygoode@gmail.com&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &#39;Software&#39;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+&gt; IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+&gt; CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+&gt; TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+&gt; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## cssesc
+License: MIT
+By: Mathias Bynens
+Repository: https://github.com/mathiasbynens/cssesc
+
+&gt; Copyright Mathias Bynens &lt;https://mathiasbynens.be/&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &quot;Software&quot;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+&gt; NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+&gt; LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+&gt; OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+&gt; WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## dotenv-expand
+License: BSD-2-Clause
+By: motdotla
+Repository: https://github.com/motdotla/dotenv-expand
+
+&gt; Copyright (c) 2016, Scott Motte
+&gt; All rights reserved.
+&gt; 
+&gt; Redistribution and use in source and binary forms, with or without
+&gt; modification, are permitted provided that the following conditions are met:
+&gt; 
+&gt; * Redistributions of source code must retain the above copyright notice, this
+&gt;   list of conditions and the following disclaimer.
+&gt; 
+&gt; * Redistributions in binary form must reproduce the above copyright notice,
+&gt;   this list of conditions and the following disclaimer in the documentation
+&gt;   and/or other materials provided with the distribution.
+&gt; 
+&gt; THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+&gt; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+&gt; IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+&gt; DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+&gt; FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+&gt; DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+&gt; SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+&gt; CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+&gt; OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+&gt; OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+---------------------------------------
+
+## ee-first
+License: MIT
+By: Jonathan Ong, Douglas Christopher Wilson
+Repository: https://github.com/jonathanong/ee-first
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2014 Jonathan Ong me@jongleberry.com
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## encodeurl
+License: MIT
+By: Douglas Christopher Wilson
+Repository: https://github.com/pillarjs/encodeurl
+
+&gt; (The MIT License)
+&gt; 
+&gt; Copyright (c) 2016 Douglas Christopher Wilson
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &#39;Software&#39;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+&gt; IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+&gt; CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+&gt; TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+&gt; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## entities
+License: BSD-2-Clause
+By: Felix Boehm
+Repository: https://github.com/fb55/entities
+
+&gt; Copyright (c) Felix Böhm
+&gt; All rights reserved.
+&gt; 
+&gt; Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+&gt; 
+&gt; Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+&gt; 
+&gt; Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+&gt; 
+&gt; THIS IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS,
+&gt; EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+---------------------------------------
+
+## es-module-lexer
+License: MIT
+By: Guy Bedford
+Repository: https://github.com/guybedford/es-module-lexer
+
+&gt; MIT License
+&gt; -----------
+&gt; 
+&gt; Copyright (C) 2018-2022 Guy Bedford
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## escape-html
+License: MIT
+Repository: https://github.com/component/escape-html
+
+&gt; (The MIT License)
+&gt; 
+&gt; Copyright (c) 2012-2013 TJ Holowaychuk
+&gt; Copyright (c) 2015 Andreas Lubbe
+&gt; Copyright (c) 2015 Tiancheng &quot;Timothy&quot; Gu
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &#39;Software&#39;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+&gt; IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+&gt; CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+&gt; TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+&gt; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## estree-walker
+License: MIT
+By: Rich Harris
+Repository: https://github.com/Rich-Harris/estree-walker
+
+&gt; Copyright (c) 2015-20 [these people](https://github.com/Rich-Harris/estree-walker/graphs/contributors)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## etag
+License: MIT
+By: Douglas Christopher Wilson, David Björklund
+Repository: https://github.com/jshttp/etag
+
+&gt; (The MIT License)
+&gt; 
+&gt; Copyright (c) 2014-2016 Douglas Christopher Wilson
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &#39;Software&#39;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+&gt; IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+&gt; CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+&gt; TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+&gt; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## finalhandler
+License: MIT
+By: Douglas Christopher Wilson
+Repository: https://github.com/pillarjs/finalhandler
+
+&gt; (The MIT License)
+&gt; 
+&gt; Copyright (c) 2014-2017 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &#39;Software&#39;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+&gt; IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+&gt; CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+&gt; TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+&gt; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## follow-redirects
+License: MIT
+By: Ruben Verborgh, Olivier Lalonde, James Talmage
+Repository: https://github.com/follow-redirects/follow-redirects
+
+&gt; Copyright 2014–present Olivier Lalonde &lt;olalonde@gmail.com&gt;, James Talmage &lt;james@talmage.io&gt;, Ruben Verborgh
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of
+&gt; this software and associated documentation files (the &quot;Software&quot;), to deal in
+&gt; the Software without restriction, including without limitation the rights to
+&gt; use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+&gt; of the Software, and to permit persons to whom the Software is furnished to do
+&gt; so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+&gt; WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+&gt; IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## fresh-import
+License: MIT
+By: sapphi-red
+Repository: https://github.com/sapphi-red/fresh-import
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) 2026 sapphi-red
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## generic-names
+License: MIT
+By: Alexey Litvinov
+Repository: https://github.com/css-modules/generic-names
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2015 Alexey Litvinov
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## glob-parent
+License: ISC
+By: Gulp Team, Elan Shanker, Blaine Bublitz
+Repository: https://github.com/gulpjs/glob-parent
+
+&gt; The ISC License
+&gt; 
+&gt; Copyright (c) 2015, 2019 Elan Shanker
+&gt; 
+&gt; Permission to use, copy, modify, and/or distribute this software for any
+&gt; purpose with or without fee is hereby granted, provided that the above
+&gt; copyright notice and this permission notice appear in all copies.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+&gt; WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+&gt; MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+&gt; ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+&gt; WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+&gt; ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
+&gt; IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---------------------------------------
+
+## host-validation-middleware
+License: MIT
+By: sapphi-red
+Repository: https://github.com/sapphi-red/host-validation-middleware
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) 2025 sapphi-red
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## http-proxy-3
+License: MIT
+By: William Stein, Charlie Robbins, Jimb Esser, jcrugzz
+Repository: https://github.com/sagemathinc/http-proxy-3
+
+&gt; node-http-3
+&gt; 
+&gt; Copyright (c) 2010-2025 William Stein, Charlie Robbins, Jarrett Cruger &amp; the Contributors.
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &quot;Software&quot;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+&gt; NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+&gt; LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+&gt; OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+&gt; WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## icss-utils
+License: ISC
+By: Glen Maddern
+Repository: https://github.com/css-modules/icss-utils
+
+&gt; ISC License (ISC)
+&gt; Copyright 2018 Glen Maddern
+&gt; 
+&gt; Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---------------------------------------
+
+## is-binary-path
+License: MIT
+By: Sindre Sorhus
+Repository: https://github.com/sindresorhus/is-binary-path
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) 2019 Sindre Sorhus &lt;sindresorhus@gmail.com&gt; (https://sindresorhus.com), Paul Miller (https://paulmillr.com)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## is-extglob
+License: MIT
+By: Jon Schlinkert
+Repository: https://github.com/jonschlinkert/is-extglob
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2014-2016, Jon Schlinkert
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## is-glob
+License: MIT
+By: Jon Schlinkert, Brian Woodward, Daniel Perez
+Repository: https://github.com/micromatch/is-glob
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2014-2017, Jon Schlinkert.
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## is-reference
+License: MIT
+By: Rich Harris
+Repository: https://github.com/Rich-Harris/is-reference
+
+---------------------------------------
+
+## js-tokens
+License: MIT
+By: Simon Lydell
+Repository: https://github.com/lydell/js-tokens
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Simon Lydell
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## launch-editor, launch-editor-middleware
+License: MIT
+By: Evan You
+Repositories: https://github.com/vitejs/launch-editor, https://github.com/vitejs/launch-editor
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2017-present, Yuxi (Evan) You
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## lilconfig
+License: MIT
+By: antonk52
+Repository: https://github.com/antonk52/lilconfig
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) 2022 Anton Kastritskiy
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## loader-utils
+License: MIT
+By: Tobias Koppers @sokra
+Repository: https://github.com/webpack/loader-utils
+
+&gt; Copyright JS Foundation and other contributors
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &#39;Software&#39;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+&gt; IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+&gt; CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+&gt; TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+&gt; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## lodash.camelcase
+License: MIT
+By: John-David Dalton, Blaine Bublitz, Mathias Bynens
+Repository: https://github.com/lodash/lodash
+
+&gt; Copyright jQuery Foundation and other contributors &lt;https://jquery.org/&gt;
+&gt; 
+&gt; Based on Underscore.js, copyright Jeremy Ashkenas,
+&gt; DocumentCloud and Investigative Reporters &amp; Editors &lt;http://underscorejs.org/&gt;
+&gt; 
+&gt; This software consists of voluntary contributions made by many
+&gt; individuals. For exact contribution history, see the revision history
+&gt; available at https://github.com/lodash/lodash
+&gt; 
+&gt; The following license applies to all parts of this software except as
+&gt; documented below:
+&gt; 
+&gt; ====
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &quot;Software&quot;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+&gt; NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+&gt; LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+&gt; OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+&gt; WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+&gt; 
+&gt; ====
+&gt; 
+&gt; Copyright and related rights for sample code are waived via CC0. Sample
+&gt; code is defined as all source code displayed within the prose of the
+&gt; documentation.
+&gt; 
+&gt; CC0: http://creativecommons.org/publicdomain/zero/1.0/
+&gt; 
+&gt; ====
+&gt; 
+&gt; Files located in the node_modules and vendor directories are externally
+&gt; maintained libraries used by this software which have their own
+&gt; licenses; we recommend you read them, as their terms may differ from the
+&gt; terms above.
+
+---------------------------------------
+
+## magic-string
+License: MIT
+By: Rich Harris
+Repository: https://github.com/Rich-Harris/magic-string
+
+&gt; Copyright 2018 Rich Harris
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## mlly, ufo
+License: MIT
+Repositories: https://github.com/unjs/mlly, https://github.com/unjs/ufo
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) Pooya Parsa &lt;pooya@pi0.io&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## mrmime
+License: MIT
+By: Luke Edwards
+Repository: https://github.com/lukeed/mrmime
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) Luke Edwards &lt;luke.edwards05@gmail.com&gt; (https://lukeed.com)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## normalize-path
+License: MIT
+By: Jon Schlinkert, Blaine Bublitz
+Repository: https://github.com/jonschlinkert/normalize-path
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2014-2018, Jon Schlinkert.
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## object-assign
+License: MIT
+By: Sindre Sorhus
+Repository: https://github.com/sindresorhus/object-assign
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) Sindre Sorhus &lt;sindresorhus@gmail.com&gt; (sindresorhus.com)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## obug
+License: MIT
+By: Kevin Deng
+Repository: https://github.com/sxzz/obug
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright © 2025-PRESENT Kevin Deng (https://github.com/sxzz)
+&gt; Copyright (c) 2014-2017 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
+&gt; Copyright (c) 2018-2021 Josh Junon
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## on-finished
+License: MIT
+By: Douglas Christopher Wilson, Jonathan Ong
+Repository: https://github.com/jshttp/on-finished
+
+&gt; (The MIT License)
+&gt; 
+&gt; Copyright (c) 2013 Jonathan Ong &lt;me@jongleberry.com&gt;
+&gt; Copyright (c) 2014 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &#39;Software&#39;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+&gt; IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+&gt; CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+&gt; TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+&gt; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## parse5
+License: MIT
+By: Ivan Nikulin, James Garbutt, Felix Boehm, Titus
+Repository: https://github.com/inikulin/parse5
+
+&gt; Copyright (c) 2013-2019 Ivan Nikulin (ifaaan@gmail.com, https://github.com/inikulin)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## parseurl
+License: MIT
+By: Douglas Christopher Wilson, Jonathan Ong
+Repository: https://github.com/pillarjs/parseurl
+
+&gt; (The MIT License)
+&gt; 
+&gt; Copyright (c) 2014 Jonathan Ong &lt;me@jongleberry.com&gt;
+&gt; Copyright (c) 2014-2017 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &#39;Software&#39;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+&gt; IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+&gt; CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+&gt; TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+&gt; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## periscopic
+License: MIT
+Repository: https://github.com/Rich-Harris/periscopic
+
+&gt; Copyright (c) 2019 Rich Harris
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## picocolors
+License: ISC
+By: Alexey Raspopov
+Repository: https://github.com/alexeyraspopov/picocolors
+
+&gt; ISC License
+&gt; 
+&gt; Copyright (c) 2021-2024 Oleksii Raspopov, Kostiantyn Denysov, Anton Verinov
+&gt; 
+&gt; Permission to use, copy, modify, and/or distribute this software for any
+&gt; purpose with or without fee is hereby granted, provided that the above
+&gt; copyright notice and this permission notice appear in all copies.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+&gt; WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+&gt; MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+&gt; ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+&gt; WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+&gt; ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+&gt; OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---------------------------------------
+
+## postcss-import
+License: MIT
+By: Maxime Thirouin
+Repository: https://github.com/postcss/postcss-import
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2014 Maxime Thirouin, Jason Campbell &amp; Kevin Mårtensson
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of
+&gt; this software and associated documentation files (the &quot;Software&quot;), to deal in
+&gt; the Software without restriction, including without limitation the rights to
+&gt; use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+&gt; the Software, and to permit persons to whom the Software is furnished to do so,
+&gt; subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+&gt; FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+&gt; COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+&gt; IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+&gt; CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## postcss-load-config
+License: MIT
+By: Michael Ciniawky, Ryan Dunckel, Mateusz Derks, Dalton Santos, Patrick Gilday, François Wouts
+Repository: https://github.com/postcss/postcss-load-config
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright Michael Ciniawsky &lt;michael.ciniawsky@gmail.com&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of
+&gt; this software and associated documentation files (the &quot;Software&quot;), to deal in
+&gt; the Software without restriction, including without limitation the rights to
+&gt; use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+&gt; the Software, and to permit persons to whom the Software is furnished to do so,
+&gt; subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+&gt; FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+&gt; COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+&gt; IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+&gt; CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## postcss-modules
+License: MIT
+By: Alexander Madyankin
+Repository: https://github.com/css-modules/postcss-modules
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright 2015-present Alexander Madyankin &lt;alexander@madyankin.name&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of
+&gt; this software and associated documentation files (the &quot;Software&quot;), to deal in
+&gt; the Software without restriction, including without limitation the rights to
+&gt; use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+&gt; the Software, and to permit persons to whom the Software is furnished to do so,
+&gt; subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+&gt; FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+&gt; COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+&gt; IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+&gt; CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## postcss-modules-extract-imports
+License: ISC
+By: Glen Maddern
+Repository: https://github.com/css-modules/postcss-modules-extract-imports
+
+&gt; Copyright 2015 Glen Maddern
+&gt; 
+&gt; Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---------------------------------------
+
+## postcss-modules-local-by-default
+License: MIT
+By: Mark Dalgleish
+Repository: https://github.com/css-modules/postcss-modules-local-by-default
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright 2015 Mark Dalgleish &lt;mark.john.dalgleish@gmail.com&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of
+&gt; this software and associated documentation files (the &quot;Software&quot;), to deal in
+&gt; the Software without restriction, including without limitation the rights to
+&gt; use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+&gt; the Software, and to permit persons to whom the Software is furnished to do so,
+&gt; subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+&gt; FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+&gt; COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+&gt; IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+&gt; CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## postcss-modules-scope
+License: ISC
+By: Glen Maddern
+Repository: https://github.com/css-modules/postcss-modules-scope
+
+&gt; ISC License (ISC)
+&gt; 
+&gt; Copyright (c) 2015, Glen Maddern
+&gt; 
+&gt; Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---------------------------------------
+
+## postcss-modules-values
+License: ISC
+By: Glen Maddern
+Repository: https://github.com/css-modules/postcss-modules-values
+
+&gt; ISC License (ISC)
+&gt; 
+&gt; Copyright (c) 2015, Glen Maddern
+&gt; 
+&gt; Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---------------------------------------
+
+## postcss-selector-parser
+License: MIT
+By: Maxime Thirouin, Ben Briggs, Chris Eppstein
+Repository: https://github.com/postcss/postcss-selector-parser
+
+&gt; Copyright (c) Ben Briggs &lt;beneb.info@gmail.com&gt; (http://beneb.info)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person
+&gt; obtaining a copy of this software and associated documentation
+&gt; files (the &quot;Software&quot;), to deal in the Software without
+&gt; restriction, including without limitation the rights to use,
+&gt; copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the
+&gt; Software is furnished to do so, subject to the following
+&gt; conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+&gt; OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+&gt; NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+&gt; HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+&gt; WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+&gt; FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+&gt; OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## postcss-value-parser
+License: MIT
+By: Bogdan Chadkin
+Repository: https://github.com/TrySound/postcss-value-parser
+
+&gt; Copyright (c) Bogdan Chadkin &lt;trysound@yandex.ru&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person
+&gt; obtaining a copy of this software and associated documentation
+&gt; files (the &quot;Software&quot;), to deal in the Software without
+&gt; restriction, including without limitation the rights to use,
+&gt; copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the
+&gt; Software is furnished to do so, subject to the following
+&gt; conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+&gt; OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+&gt; NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+&gt; HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+&gt; WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+&gt; FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+&gt; OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## readdirp
+License: MIT
+By: Thorsten Lorenz, Paul Miller
+Repository: https://github.com/paulmillr/readdirp
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) 2012-2019 Thorsten Lorenz, Paul Miller (https://paulmillr.com)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## resolve.exports, totalist
+License: MIT
+By: Luke Edwards
+Repositories: https://github.com/lukeed/resolve.exports, https://github.com/lukeed/totalist
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) Luke Edwards &lt;luke.edwards05@gmail.com&gt; (lukeed.com)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## shell-quote
+License: MIT
+By: James Halliday
+Repository: http://github.com/ljharb/shell-quote
+
+&gt; The MIT License
+&gt; 
+&gt; Copyright (c) 2013 James Halliday (mail@substack.net)
+&gt; 
+&gt; Permission is hereby granted, free of charge, 
+&gt; to any person obtaining a copy of this software and 
+&gt; associated documentation files (the &quot;Software&quot;), to 
+&gt; deal in the Software without restriction, including 
+&gt; without limitation the rights to use, copy, modify, 
+&gt; merge, publish, distribute, sublicense, and/or sell 
+&gt; copies of the Software, and to permit persons to whom 
+&gt; the Software is furnished to do so, 
+&gt; subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice 
+&gt; shall be included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, 
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES 
+&gt; OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+&gt; IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR 
+&gt; ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
+&gt; TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+&gt; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## sirv
+License: MIT
+By: Luke Edwards
+Repository: https://github.com/lukeed/sirv
+
+---------------------------------------
+
+## statuses
+License: MIT
+By: Douglas Christopher Wilson, Jonathan Ong
+Repository: https://github.com/jshttp/statuses
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2014 Jonathan Ong &lt;me@jongleberry.com&gt;
+&gt; Copyright (c) 2016 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## std-env
+License: MIT
+Repository: https://github.com/unjs/std-env
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) Pooya Parsa &lt;pooya@pi0.io&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## string-hash
+License: CC0-1.0
+By: The Dark Sky Company
+Repository: https://github.com/darkskyapp/string-hash
+
+---------------------------------------
+
+## strip-literal
+License: MIT
+By: Anthony Fu
+Repository: https://github.com/antfu/strip-literal
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) 2022 Anthony Fu &lt;https://github.com/antfu&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## tinyexec
+License: MIT
+By: James Garbutt
+Repository: https://github.com/tinylibs/tinyexec
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) 2024 Tinylibs
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.
+
+---------------------------------------
+
+## to-regex-range
+License: MIT
+By: Jon Schlinkert, Rouven Weßling
+Repository: https://github.com/micromatch/to-regex-range
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2015-present, Jon Schlinkert.
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in
+&gt; all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+&gt; THE SOFTWARE.
+
+---------------------------------------
+
+## unpipe
+License: MIT
+By: Douglas Christopher Wilson
+Repository: https://github.com/stream-utils/unpipe
+
+&gt; (The MIT License)
+&gt; 
+&gt; Copyright (c) 2015 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &#39;Software&#39;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+&gt; IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+&gt; CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+&gt; TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+&gt; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## util-deprecate
+License: MIT
+By: Nathan Rajlich
+Repository: https://github.com/TooTallNate/util-deprecate
+
+&gt; (The MIT License)
+&gt; 
+&gt; Copyright (c) 2014 Nathan Rajlich &lt;nathan@tootallnate.net&gt;
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person
+&gt; obtaining a copy of this software and associated documentation
+&gt; files (the &quot;Software&quot;), to deal in the Software without
+&gt; restriction, including without limitation the rights to use,
+&gt; copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the
+&gt; Software is furnished to do so, subject to the following
+&gt; conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+&gt; OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+&gt; NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+&gt; HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+&gt; WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+&gt; FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+&gt; OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## utils-merge
+License: MIT
+By: Jared Hanson
+Repository: https://github.com/jaredhanson/utils-merge
+
+&gt; The MIT License (MIT)
+&gt; 
+&gt; Copyright (c) 2013-2017 Jared Hanson
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of
+&gt; this software and associated documentation files (the &quot;Software&quot;), to deal in
+&gt; the Software without restriction, including without limitation the rights to
+&gt; use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+&gt; the Software, and to permit persons to whom the Software is furnished to do so,
+&gt; subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+&gt; FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+&gt; COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+&gt; IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+&gt; CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## vary
+License: MIT
+By: Douglas Christopher Wilson
+Repository: https://github.com/jshttp/vary
+
+&gt; (The MIT License)
+&gt; 
+&gt; Copyright (c) 2014-2017 Douglas Christopher Wilson
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining
+&gt; a copy of this software and associated documentation files (the
+&gt; &#39;Software&#39;), to deal in the Software without restriction, including
+&gt; without limitation the rights to use, copy, modify, merge, publish,
+&gt; distribute, sublicense, and/or sell copies of the Software, and to
+&gt; permit persons to whom the Software is furnished to do so, subject to
+&gt; the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be
+&gt; included in all copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+&gt; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+&gt; MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+&gt; IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+&gt; CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+&gt; TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+&gt; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## ws
+License: MIT
+By: Einar Otto Stangvik
+Repository: https://github.com/websockets/ws
+
+&gt; Copyright (c) 2011 Einar Otto Stangvik &lt;einaros@gmail.com&gt;
+&gt; Copyright (c) 2013 Arnout Kazemier and contributors
+&gt; Copyright (c) 2016 Luigi Pinca and contributors
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy of
+&gt; this software and associated documentation files (the &quot;Software&quot;), to deal in
+&gt; the Software without restriction, including without limitation the rights to
+&gt; use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+&gt; the Software, and to permit persons to whom the Software is furnished to do so,
+&gt; subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+&gt; FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+&gt; COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+&gt; IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+&gt; CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---------------------------------------
+
+## zimmerframe
+License: MIT
+Repository: https://github.com/sveltejs/zimmerframe
+
+&gt; MIT License
+&gt; 
+&gt; Copyright (c) 2023 [these people](https://github.com/Rich-Harris/zimmerframe/graphs/contributors)
+&gt; 
+&gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+&gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+&gt; in the Software without restriction, including without limitation the rights
+&gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+&gt; copies of the Software, and to permit persons to whom the Software is
+&gt; furnished to do so, subject to the following conditions:
+&gt; 
+&gt; The above copyright notice and this permission notice shall be included in all
+&gt; copies or substantial portions of the Software.
+&gt; 
+&gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+&gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+&gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+&gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+&gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+&gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+&gt; SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>vitefu 1.1.3</h2><p><span>MIT</span> · <a href="https://github.com/svitejs/vitefu" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">LICENSE</h3><pre tabindex="0" lang="en">MIT License
+
+Copyright (c) 2026 Bjorn and Dominik
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>xxhash-wasm 1.1.0</h2><p><span>MIT</span> · <a href="https://github.com/jungomi/xxhash-wasm" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">LICENSE.md</h3><pre tabindex="0" lang="en">The MIT License (MIT)
+=====================
+
+Copyright © 2017 Michael Jungo
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the “Software”), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>yaml 2.9.1</h2><p><span>ISC</span> · <a href="https://github.com/eemeli/yaml" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">LICENSE</h3><pre tabindex="0" lang="en">Copyright Eemeli Aro &lt;eemeli@gmail.com&gt;
+
+Permission to use, copy, modify, and/or distribute this software for any purpose
+with or without fee is hereby granted, provided that the above copyright notice
+and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS
+OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+THIS SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>yargs-parser 22.0.0</h2><p><span>ISC</span> · <a href="https://github.com/yargs/yargs-parser" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">LICENSE.txt</h3><pre tabindex="0" lang="en">Copyright (c) 2016, Contributors
+
+Permission to use, copy, modify, and/or distribute this software
+for any purpose with or without fee is hereby granted, provided
+that the above copyright notice and this permission notice
+appear in all copies.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES
+OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>yocto-queue 1.2.2</h2><p><span>MIT</span> · <a href="https://github.com/sindresorhus/yocto-queue" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">license</h3><pre tabindex="0" lang="en">MIT License
+
+Copyright (c) Sindre Sorhus &lt;sindresorhus@gmail.com&gt; (https://sindresorhus.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>zod 4.6.7</h2><p><span>MIT</span> · <a href="https://github.com/colinhacks/zod" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">LICENSE</h3><pre tabindex="0" lang="en">MIT License
+
+Copyright (c) 2025 Colin McDonnell
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>zwitch 2.0.4</h2><p><span>MIT</span> · <a href="https://github.com/wooorm/zwitch" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">license</h3><pre tabindex="0" lang="en">(The MIT License)
+
+Copyright (c) 2016 Titus Wormer &lt;tituswormer@gmail.com&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+&#39;Software&#39;), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>Inter (font)</h2><p><span>OFL-1.1</span> · <a href="https://github.com/rsms/inter" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">OFL-inter.txt</h3><pre tabindex="0" lang="en">Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter) Inter-Italic[opsz,wght].ttf: Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+&quot;Font Software&quot; refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+&quot;Reserved Font Name&quot; refers to any names specified as such after the
+copyright statement(s).
+
+&quot;Original Version&quot; refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+&quot;Modified Version&quot; refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+&quot;Author&quot; refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION &amp; CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>JetBrains Mono (font)</h2><p><span>OFL-1.1</span> · <a href="https://github.com/JetBrains/JetBrainsMono" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">OFL-jetbrains-mono.txt</h3><pre tabindex="0" lang="en">Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono) JetBrainsMono-Italic[wght].ttf: Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+&quot;Font Software&quot; refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+&quot;Reserved Font Name&quot; refers to any names specified as such after the
+copyright statement(s).
+
+&quot;Original Version&quot; refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+&quot;Modified Version&quot; refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+&quot;Author&quot; refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION &amp; CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>Bricolage Grotesque (font)</h2><p><span>OFL-1.1</span> · <a href="https://github.com/ateliertriay/bricolage" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">OFL-bricolage-grotesque.txt</h3><pre tabindex="0" lang="en">Copyright 2022 The Bricolage Grotesque Project Authors (https://github.com/ateliertriay/bricolage)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+&quot;Font Software&quot; refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+&quot;Reserved Font Name&quot; refers to any names specified as such after the
+copyright statement(s).
+
+&quot;Original Version&quot; refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+&quot;Modified Version&quot; refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+&quot;Author&quot; refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION &amp; CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>Lucide (the geometry most glyphs of the Skribly icon set start from)</h2><p><span>ISC</span> · <a href="https://github.com/lucide-icons/lucide" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">lucide.txt</h3><pre tabindex="0" lang="en">The Skribly icon set (src/icons/, icons.svg, icons.json) starts most of its glyphs from the geometry of Lucide
+(https://lucide.dev, lucide-react 1.70.0), redrawn with a 1.75 px stroke and a fill layer for the duo tone. The
+glyphs named sk-* are drawn for Skribly and are not part of Lucide. The Lucide licence follows.
+
+ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>Skribly icon set (the glyphs drawn for Skribly)</h2><p><span>MIT</span> · <a href="https://github.com/skribly/ui" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">skribly-icons.txt</h3><pre tabindex="0" lang="en">The glyphs of the Skribly icon set that are drawn for Skribly and are not part of Lucide or Simple Icons (the sources
+named sk-*.svg in src/icons/svg/ of @skribly/ui: the app glyphs agent, tracker, hub, id, core, ui, docs, skills,
+newsletter and content, the panel glyphs ticket, seat, film, episode, course, lesson, certificate, match and verified,
+and the os.windows mark) are released under the MIT License below. The Lucide geometry the other glyphs start from
+keeps its ISC License (lucide.txt), and the os.macos and os.linux marks keep CC0 1.0 (simple-icons.txt).
+
+MIT License
+
+Copyright (c) 2026 Skribly
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre></details></li><li class="sk-licenses__item"><h2>Simple Icons 16.36.0 (the os.macos and os.linux marks of the Skribly icon set)</h2><p><span>CC0-1.0</span> · <a href="https://github.com/simple-icons/simple-icons" rel="noopener">Repozytorium</a></p><details><summary>Tekst licencji</summary><h3 lang="en">simple-icons.txt</h3><pre tabindex="0" lang="en">The marks os.macos and os.linux of the Skribly icon set (src/icons/svg/si-apple.svg and si-linux.svg) are copied
+unchanged from Simple Icons 16.36.0 (https://simpleicons.org, npm simple-icons@16.36.0, icons/apple.svg and
+icons/linux.svg), released under CC0 1.0 Universal; neither has a licence of its own in the Simple Icons data. The
+linux icon is Tux, first drawn by Larry Ewing with The GIMP. os.windows (sk-windows.svg, four panes) is drawn for
+Skribly. Apple, macOS, Windows and Linux are trademarks of their owners; the marks only show which system a
+build is for. The CC0 1.0 text follows.
+
+# CC0 1.0 Universal
+
+## Statement of Purpose
+
+The laws of most jurisdictions throughout the world automatically confer exclusive Copyright and Related Rights (defined below) upon the creator and subsequent owner(s) (each and all, an “owner”) of an original work of authorship and/or a database (each, a “Work”).
+
+Certain owners wish to permanently relinquish those rights to a Work for the purpose of contributing to a commons of creative, cultural and scientific works (“Commons”) that the public can reliably and without fear of later claims of infringement build upon, modify, incorporate in other works, reuse and redistribute as freely as possible in any form whatsoever and for any purposes, including without limitation commercial purposes. These owners may contribute to the Commons to promote the ideal of a free culture and the further production of creative, cultural and scientific works, or to gain reputation or greater distribution for their Work in part through the use and efforts of others.
+
+For these and/or other purposes and motivations, and without any expectation of additional consideration or compensation, the person associating CC0 with a Work (the “Affirmer”), to the extent that he or she is an owner of Copyright and Related Rights in the Work, voluntarily elects to apply CC0 to the Work and publicly distribute the Work under its terms, with knowledge of his or her Copyright and Related Rights in the Work and the meaning and intended legal effect of CC0 on those rights.
+
+1. Copyright and Related Rights. A Work made available under CC0 may be protected by copyright and related or neighboring rights (“Copyright and Related Rights”). Copyright and Related Rights include, but are not limited to, the following:
+    1. the right to reproduce, adapt, distribute, perform, display, communicate, and translate a Work;
+    2. moral rights retained by the original author(s) and/or performer(s);
+    3. publicity and privacy rights pertaining to a person’s image or likeness depicted in a Work;
+    4. rights protecting against unfair competition in regards to a Work, subject to the limitations in paragraph 4(i), below;
+    5. rights protecting the extraction, dissemination, use and reuse of data in a Work;
+    6. database rights (such as those arising under Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, and under any national implementation thereof, including any amended or successor version of such directive); and
+    7. other similar, equivalent or corresponding rights throughout the world based on applicable law or treaty, and any national implementations thereof.
+
+2. Waiver. To the greatest extent permitted by, but not in contravention of, applicable law, Affirmer hereby overtly, fully, permanently, irrevocably and unconditionally waives, abandons, and surrenders all of Affirmer’s Copyright and Related Rights and associated claims and causes of action, whether now known or unknown (including existing as well as future claims and causes of action), in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the “Waiver”). Affirmer makes the Waiver for the benefit of each member of the public at large and to the detriment of Affirmer’s heirs and successors, fully intending that such Waiver shall not be subject to revocation, rescission, cancellation, termination, or any other legal or equitable action to disrupt the quiet enjoyment of the Work by the public as contemplated by Affirmer’s express Statement of Purpose.
+
+3. Public License Fallback. Should any part of the Waiver for any reason be judged legally invalid or ineffective under applicable law, then the Waiver shall be preserved to the maximum extent permitted taking into account Affirmer’s express Statement of Purpose. In addition, to the extent the Waiver is so judged Affirmer hereby grants to each affected person a royalty-free, non transferable, non sublicensable, non exclusive, irrevocable and unconditional license to exercise Affirmer’s Copyright and Related Rights in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by applicable law or treaty (including future time extensions), (iii) in any current or future medium and for any number of copies, and (iv) for any purpose whatsoever, including without limitation commercial, advertising or promotional purposes (the “License”). The License shall be deemed effective as of the date CC0 was applied by Affirmer to the Work. Should any part of the License for any reason be judged legally invalid or ineffective under applicable law, such partial invalidity or ineffectiveness shall not invalidate the remainder of the License, and in such case Affirmer hereby affirms that he or she will not (i) exercise any of his or her remaining Copyright and Related Rights in the Work or (ii) assert any associated claims and causes of action with respect to the Work, in either case contrary to Affirmer’s express Statement of Purpose.
+
+4. Limitations and Disclaimers.
+    1. No trademark or patent rights held by Affirmer are waived, abandoned, surrendered, licensed or otherwise affected by this document.
+    2. Affirmer offers the Work as-is and makes no representations or warranties of any kind concerning the Work, express, implied, statutory or otherwise, including without limitation warranties of title, merchantability, fitness for a particular purpose, non infringement, or the absence of latent or other defects, accuracy, or the present or absence of errors, whether or not discoverable, all to the greatest extent permissible under applicable law.
+    3. Affirmer disclaims responsibility for clearing rights of other persons that may apply to the Work or any use thereof, including without limitation any person’s Copyright and Related Rights in the Work. Further, Affirmer disclaims responsibility for obtaining any necessary consents, permissions or other rights required for any use of the Work.
+    4. Affirmer understands and acknowledges that Creative Commons is not a party to this document and has no duty or obligation with respect to this CC0 or use of the Work.
+
+For more information, please see &lt;https://creativecommons.org/publicdomain/zero/1.0&gt;.</pre></details></li></ul><nav class="sk-pagination sk-pagination--ends not-content" aria-label="Strony" data-pagefind-ignore><ul><li><a href="/pl/licencje/8/" rel="prev"><span class="sk-pagination__word">Poprzednia</span></a></li><li><a href="/pl/licencje/" aria-label="Strona 1">1</a></li><li class="sk-pagination__gap" aria-hidden="true">…</li><li class="sk-pagination__wide"><a href="/pl/licencje/5/" aria-label="Strona 5">5</a></li><li class="sk-pagination__wide"><a href="/pl/licencje/6/" aria-label="Strona 6">6</a></li><li><a href="/pl/licencje/7/" aria-label="Strona 7">7</a></li><li><a href="/pl/licencje/8/" aria-label="Strona 8">8</a></li><li><a href="/pl/licencje/9/" aria-label="Strona 9" aria-current="page">9</a></li></ul></nav></section></main><footer class="sk-site-footer sk-product--ui"><div class="sk-container sk-container--wide"><section aria-labelledby="sk-footer-newsletter-title" class="sk-band sk-band--sunken sk-pattern sk-pattern--ruled sk-product--newsletter sk-newsletter-signup sk-newsletter-signup--footer"><div class="sk-newsletter-signup__text"><svg class="sk-logo sk-logo--newsletter" viewBox="0 0 64 64" width="2.5rem" height="2.5rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-newsletter)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.2 19.6h7.6v6.8h-7.6zM40.6 20.2l3.4 2.8 3.4-2.8" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-newsletter)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-newsletter)" opacity="0.55"/></svg><h2 class="sk-newsletter-signup__title" id="sk-footer-newsletter-title">Dostawaj newsletter e-mailem</h2><p class="sk-newsletter-signup__lead">Wiadomości z AI, które warto przeczytać, raz w tygodniu i ze źródłem pod każdą.</p></div><form class="sk-newsletter-signup__form" method="get" action="https://newsletter.skribly.pl/pl/#signup" aria-labelledby="sk-footer-newsletter-title"><label class="sk-label" for="sk-footer-newsletter-email">Adres e-mail</label><div class="sk-newsletter-signup__row"><input class="sk-input sk-newsletter-signup__input" type="email" id="sk-footer-newsletter-email" name="email" autocomplete="email" inputmode="email" spellcheck="false" maxlength="254" required aria-describedby="sk-footer-newsletter-hint"><button class="sk-button" type="submit">Zapisz się</button></div><p class="sk-hint" id="sk-footer-newsletter-hint">Tematy i zgodę potwierdzasz na stronie newslettera.</p></form></section><div class="sk-site-footer__grid"><div class="sk-site-footer__brand"><a href="https://ui.skribly.pl/" aria-label="Skribly UI, strona główna"><svg class="sk-logo sk-logo--ui" viewBox="0 0 64 64" width="2.25rem" height="2.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-ui)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M41.2 19.6h.01M46.8 19.6h.01M41.2 25.4h.01M46.8 25.4h.01" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-ui)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-ui)" opacity="0.55"/></svg><strong>Skribly UI</strong></a><p>Tokeny i komponenty</p></div><nav aria-labelledby="sk-footer-products-ui"><h2 id="sk-footer-products-ui">Produkty</h2><ul><li><a href="https://skribly.pl/pl/"><svg class="sk-logo sk-logo--skribly" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-accent)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-accent)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-accent)" opacity="0.55"/></svg>Skribly</a></li><li><a href="https://skribly.pl/pl/apps/skribly-agent/"><svg class="sk-logo sk-logo--agent" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-agent)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.6 19.4l3.6 3.6-3.6 3.6M45.6 28.4h2.6" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-agent)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-agent)" opacity="0.55"/></svg>Skribly Agent</a></li><li><a href="https://skribly.pl/pl/apps/skribly-tracker/"><svg class="sk-logo sk-logo--tracker" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-tracker)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.4 23.6l2.8 2.8 4.8-5.4" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-tracker)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-tracker)" opacity="0.55"/></svg>Skribly Tracker</a></li><li><a href="https://skribly.pl/pl/apps/agent-skills/"><svg class="sk-logo sk-logo--skills" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-skills)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M44 18.6v8.8M39.6 23h8.8" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-skills)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-skills)" opacity="0.55"/></svg>agent-skills</a></li><li><a href="https://docs.skribly.pl/"><svg class="sk-logo sk-logo--docs" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-docs)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.4 19h7.2M40.4 23h7.2M40.4 27h4.4" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-docs)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-docs)" opacity="0.55"/></svg>Skribly Docs</a></li><li><a href="https://ui.skribly.pl/" aria-current="true"><svg class="sk-logo sk-logo--ui" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-ui)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M41.2 19.6h.01M46.8 19.6h.01M41.2 25.4h.01M46.8 25.4h.01" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-ui)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-ui)" opacity="0.55"/></svg>Skribly UI</a></li></ul></nav><nav aria-labelledby="sk-footer-channels-ui"><h2 id="sk-footer-channels-ui">Bądź na bieżąco</h2><ul><li><a href="https://newsletter.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--newsletter" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-newsletter)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.2 19.6h7.6v6.8h-7.6zM40.6 20.2l3.4 2.8 3.4-2.8" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-newsletter)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-newsletter)" opacity="0.55"/></svg>Newsletter</a></li></ul></nav><nav aria-labelledby="sk-footer-services-ui"><h2 id="sk-footer-services-ui">Usługi</h2><ul><li><a href="https://status.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--status" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-status)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M39.6 23.6h2.2l1.4-3.6 2.4 6.8 1.4-3.2h1.4" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-status)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-status)" opacity="0.55"/></svg>Status</a></li><li><a href="https://trust.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--trust" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-trust)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M41.8 22.6v-3h4.4v3M40.8 24.2h6.4v2.8h-6.4z" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-trust)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-trust)" opacity="0.55"/></svg>Trust</a></li><li><a href="https://tools.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--tools" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-tools)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.8 27.2L46 22M43.8 19.8l4.4 4.4" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-tools)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-tools)" opacity="0.55"/></svg>Tools</a></li><li><a href="https://projects.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--projects" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-projects)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.4 21.8h4.8v4.8h-4.8zM43 21.8v-2.6h4.8v4.8h-2.6" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-projects)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-projects)" opacity="0.55"/></svg>Projects</a></li><li><a href="https://dc.skribly.pl/pl/" hreflang="pl"><svg class="sk-icon sk-icon--duo sk-site-footer__icon" viewBox="0 0 24 24" focusable="false" data-icon="content.comment" aria-hidden="true"><g class="sk-icon__fill"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></g><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></svg>Discord</a></li></ul></nav><nav aria-labelledby="sk-footer-soon-ui"><h2 id="sk-footer-soon-ui">Wkrótce</h2><ul><li><a href="https://id.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--id" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-id)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M44 20.2h.01M40.8 27.2l1.4-2.6h3.6l1.4 2.6" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-id)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-id)" opacity="0.55"/></svg>Skribly ID <span class="sk-site-footer__soon">Wkrótce</span></a></li><li><a href="https://hub.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--hub" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-hub)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.4 22.6l3.6-3.6 3.6 3.6v4.8h-7.2z" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-hub)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-hub)" opacity="0.55"/></svg>Hub <span class="sk-site-footer__soon">Wkrótce</span></a></li><li><a href="https://api.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--api" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-api)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.4 20.6h7.2M45.6 18.6l2 2-2 2M47.6 25.4h-7.2M42.4 23.4l-2 2 2 2" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-api)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-api)" opacity="0.55"/></svg>API <span class="sk-site-footer__soon">Wkrótce</span></a></li><li><a href="https://feedback.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--feedback" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-feedback)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.4 19.2h7.2v5.6h-3.2l-2.6 2.6v-2.6h-1.4z" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-feedback)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-feedback)" opacity="0.55"/></svg>Feedback <span class="sk-site-footer__soon">Wkrótce</span></a></li><li><a href="https://tracker.skribly.pl/pl/" hreflang="pl"><svg class="sk-logo sk-logo--tracker" viewBox="0 0 64 64" width="1.25rem" height="1.25rem" focusable="false" aria-hidden="true"><rect x="13" y="13" width="20" height="20" rx="2.5" fill="var(--sk-tool-tracker)"/><rect x="37" y="13" width="14" height="20" rx="2" fill="currentColor"/><path d="M40.4 23.6l2.8 2.8 4.8-5.4" fill="none" stroke="var(--sk-bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="37" width="38" height="7.5" rx="2" fill="currentColor"/><rect x="13" y="48" width="19" height="6" rx="2" fill="currentColor"/><circle cx="38.5" cy="51" r="3" fill="var(--sk-tool-tracker)"/><circle cx="47.5" cy="51" r="3" fill="var(--sk-tool-tracker)" opacity="0.55"/></svg>Tracker <span class="sk-site-footer__soon">Wkrótce</span></a></li><li><a href="https://time.skribly.pl/pl/" hreflang="pl"><svg class="sk-icon sk-icon--duo sk-site-footer__icon" viewBox="0 0 24 24" focusable="false" data-icon="time.clock" aria-hidden="true"><g class="sk-icon__fill"><circle cx="12" cy="12" r="10"></circle></g><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>Time <span class="sk-site-footer__soon">Wkrótce</span></a></li></ul></nav><nav aria-labelledby="sk-footer-ui-0"><h2 id="sk-footer-ui-0">Przegląd</h2><ul><li><a href="/pl/start/">Pierwsze kroki</a></li><li><a href="/pl/principles/">Zasady</a></li><li><a href="/pl/changelog/">Historia zmian</a></li></ul></nav><nav aria-labelledby="sk-footer-ui-1"><h2 id="sk-footer-ui-1">Podstawy</h2><ul><li><a href="/pl/tokens/">Tokeny projektowe</a></li><li><a href="/pl/themes/">Motywy i gęstość</a></li><li><a href="/pl/icons/">Ikony</a></li><li><a href="/pl/plain-css/">Czysty CSS</a></li><li><a href="/pl/accessibility/">Dostępność</a></li></ul></nav><nav aria-labelledby="sk-footer-ui-2"><h2 id="sk-footer-ui-2">Wzorce</h2><ul><li><a href="/pl/patterns/messages/">Komunikaty</a></li><li><a href="/pl/patterns/forms/">Formularze i walidacja</a></li><li><a href="/pl/patterns/layout/">Układ i gęstość</a></li><li><a href="/pl/patterns/sidebar/">Panel boczny</a></li><li><a href="/pl/components/">Wszystkie komponenty</a></li></ul></nav><nav aria-labelledby="sk-footer-ui-3"><h2 id="sk-footer-ui-3">Marka</h2><ul><li><a href="/pl/brand/">Marka</a></li><li><a href="/pl/brand/logos/">Logo</a></li><li><a href="/pl/brand/patterns/">Desenie marki</a></li><li><a href="/pl/brand/hero/">Hero marki</a></li><li><a href="/pl/brand/palettes/">Palety produktów</a></li></ul></nav></div><div class="sk-site-footer__bottom"><p>© 2026 Skribly</p><p>Budujemy z celem WCAG 2.2 AA. <a href="/pl/accessibility/">Dostępność</a></p><p><a href="/pl/licencje/">Licencje</a></p></div></div></footer><section class="sk-a11y" id="sk-a11y-panel" aria-labelledby="sk-a11y-title" hidden data-sk-a11y-panel><div class="sk-a11y__head"><h2 class="sk-a11y__title" id="sk-a11y-title" tabindex="-1" data-sk-a11y-title>Dostępność</h2><button class="sk-icon-button" type="button" data-sk-a11y-close aria-label="Zamknij ustawienia dostępności"><svg class="sk-icon" viewBox="0 0 24 24" focusable="false" data-icon="action.close" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button></div><p class="sk-a11y__note">Te ustawienia zostają na tym urządzeniu i działają na każdej stronie Skribly.</p><p class="sk-a11y__label" id="sk-a11y-size-label">Rozmiar tekstu</p><div class="sk-a11y__size" role="group" aria-labelledby="sk-a11y-size-label"><button class="sk-a11y__step" type="button" data-sk-a11y-step="-1" aria-label="Mniejszy tekst">A−</button><output class="sk-a11y__value" data-sk-a11y-size aria-live="polite">100%</output><button class="sk-a11y__step" type="button" data-sk-a11y-step="1" aria-label="Większy tekst">A+</button></div><p class="sk-a11y__label" id="sk-a11y-display">Wyświetlanie</p><div class="sk-a11y__grid" role="group" aria-labelledby="sk-a11y-display"><button class="sk-a11y__option" type="button" data-sk-a11y-option="grayscale" aria-pressed="false">Skala szarości</button><button class="sk-a11y__option" type="button" data-sk-a11y-option="contrast" aria-pressed="false">Wysoki kontrast</button><button class="sk-a11y__option" type="button" data-sk-a11y-option="invert" aria-pressed="false">Odwrócone kolory</button><button class="sk-a11y__option" type="button" data-sk-a11y-option="light" aria-pressed="false">Jasne tło</button></div><p class="sk-a11y__label" id="sk-a11y-reading">Czytanie</p><div class="sk-a11y__grid" role="group" aria-labelledby="sk-a11y-reading"><button class="sk-a11y__option" type="button" data-sk-a11y-option="links" aria-pressed="false">Podkreśl linki</button><button class="sk-a11y__option" type="button" data-sk-a11y-option="font" aria-pressed="false">Czytelna czcionka</button><button class="sk-a11y__option" type="button" data-sk-a11y-option="motion" aria-pressed="false">Zatrzymaj animacje</button><button class="sk-a11y__option" type="button" data-sk-a11y-option="focus" aria-pressed="false">Wyraźny fokus</button></div><button class="sk-a11y__reset" type="button" data-sk-a11y-reset>Przywróć ustawienia</button></section><script type="module" src="/_astro/AccessibilityPanel.astro_astro_type_script_index_0_lang.Dccszmtb.js"></script><button class="sk-icon-button sk-back-to-top" type="button" data-sk-back-to-top data-sk-needs-js aria-label="Wróć na górę" title="Wróć na górę"><svg class="sk-icon" viewBox="0 0 24 24" focusable="false" data-icon="arrow.up" aria-hidden="true"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg></button><script type="module" src="/_astro/BackToTop.astro_astro_type_script_index_0_lang.30PkSwuP.js"></script><script type="module" src="/_astro/SwipeRows.astro_astro_type_script_index_0_lang.BVGYThK_.js"></script><dialog class="sk-search" id="sk-search" aria-labelledby="sk-search-title" data-sk-search data-pagefind="/pagefind/pagefind.js" data-search-loading="Szukam…" data-search-empty="Nic nie znaleziono. Spróbuj innego słowa." data-search-offline="Wyszukiwarka działa na opublikowanej stronie, gdy build zbuduje indeks." data-search-one="wynik" data-search-few="wyniki" data-search-many="wyników"><h2 class="sk-visually-hidden" id="sk-search-title">Szukaj na stronie</h2><div class="sk-search__head"><svg class="sk-icon" viewBox="0 0 24 24" focusable="false" data-icon="action.search" aria-hidden="true"><g class="sk-icon__fill"><circle cx="11" cy="11" r="8"></circle></g><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg><input class="sk-search__input" type="search" data-sk-search-input aria-label="Szukaj na stronie" aria-describedby="sk-search-hint" placeholder="Szukaj stron i sekcji" autocomplete="off" spellcheck="false" enterkeyhint="search"><button class="sk-icon-button" type="button" data-sk-search-close aria-label="Zamknij"><svg class="sk-icon" viewBox="0 0 24 24" focusable="false" data-icon="action.close" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button></div><div class="sk-search__body"><p class="sk-search__status" role="status" data-sk-search-status></p><ul class="sk-search__list" aria-label="Wyniki wyszukiwania" data-sk-search-results></ul></div><p class="sk-search__foot" id="sk-search-hint">Strzałki przenoszą między wynikami, Enter otwiera, Esc zamyka. <kbd class="sk-kbd">Ctrl K</kbd> <kbd class="sk-kbd">/</kbd></p></dialog><script type="module" src="/_astro/SearchDialog.astro_astro_type_script_index_0_lang.2o4tHsTv.js"></script></body></html>

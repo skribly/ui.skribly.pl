@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.346
+Success: a short note that closes by itself.
+
+00:00:02.346 --> 00:00:04.380
+Warning: stays until it is closed.
+
+00:00:04.380 --> 00:00:07.188
+Error: read out at once by screen readers.
+
+00:00:07.188 --> 00:00:09.280
+Each one has an icon and a word, never colour alone.

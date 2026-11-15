@@ -1,0 +1,10 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.100
+A Modal opens with focus on its first field.
+
+00:00:04.100 --> 00:00:06.321
+Tab stays inside the dialog.
+
+00:00:06.321 --> 00:00:08.640
+Escape closes it, and focus goes back to the button.
