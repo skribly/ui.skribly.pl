@@ -504,6 +504,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/agents/sessionstatechip/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/agents/sessionstatechip/"/>
   </url>
+  <url><loc>https://ui.skribly.pl/components/agents/sessiontimeline/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/agents/sessiontimeline/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/agents/sessiontimeline/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/agents/sessiontimeline/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/agents/sessiontimeline/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/agents/sessiontimeline/"/>
+  </url>
   <url><loc>https://ui.skribly.pl/components/agents/agentpane/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/agents/agentpane/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/agents/agentpane/"/>
@@ -944,6 +952,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/content/outputbox/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/content/outputbox/"/>
   </url>
+  <url><loc>https://ui.skribly.pl/components/content/previewframe/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/content/previewframe/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/content/previewframe/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/content/previewframe/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/content/previewframe/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/content/previewframe/"/>
+  </url>
   <url><loc>https://ui.skribly.pl/components/content/terminalscreen/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/content/terminalscreen/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/content/terminalscreen/"/>
@@ -1360,6 +1376,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/forms/datetimeinput/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/forms/datetimeinput/"/>
   </url>
+  <url><loc>https://ui.skribly.pl/components/forms/moneyinput/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/forms/moneyinput/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/forms/moneyinput/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/forms/moneyinput/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/forms/moneyinput/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/forms/moneyinput/"/>
+  </url>
   <url><loc>https://ui.skribly.pl/components/forms/searchfield/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/forms/searchfield/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/forms/searchfield/"/>
@@ -1447,6 +1471,46 @@
   <url><loc>https://ui.skribly.pl/pl/components/icons/any-lucide-glyph/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/icons/any-lucide-glyph/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/icons/any-lucide-glyph/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/components/inbox/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/inbox/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/inbox/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/inbox/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/inbox/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/inbox/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/components/inbox/inbox/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/inbox/inbox/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/inbox/inbox/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/inbox/inbox/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/inbox/inbox/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/inbox/inbox/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/components/inbox/inbox-compact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/inbox/inbox-compact/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/inbox/inbox-compact/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/inbox/inbox-compact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/inbox/inbox-compact/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/inbox/inbox-compact/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/components/inbox/inbox-empty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/inbox/inbox-empty/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/inbox/inbox-empty/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/inbox/inbox-empty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/inbox/inbox-empty/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/inbox/inbox-empty/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/components/inbox/inboxitem/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/inbox/inboxitem/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/inbox/inboxitem/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/inbox/inboxitem/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/inbox/inboxitem/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/inbox/inboxitem/"/>
   </url>
   <url><loc>https://ui.skribly.pl/components/lightbox/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/lightbox/"/>
@@ -1623,6 +1687,22 @@
   <url><loc>https://ui.skribly.pl/pl/components/navigation/languageswitch/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/navigation/languageswitch/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/navigation/languageswitch/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/components/navigation/localepicker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/navigation/localepicker/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/navigation/localepicker/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/navigation/localepicker/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/navigation/localepicker/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/navigation/localepicker/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/components/navigation/translationstatus/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/navigation/translationstatus/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/navigation/translationstatus/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/navigation/translationstatus/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/navigation/translationstatus/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/navigation/translationstatus/"/>
   </url>
   <url><loc>https://ui.skribly.pl/components/navigation/languagepicker/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/navigation/languagepicker/"/>
@@ -2127,6 +2207,14 @@
   <url><loc>https://ui.skribly.pl/pl/components/shell/pane/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/shell/pane/"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/shell/pane/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/components/shell/splitpane/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/shell/splitpane/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/shell/splitpane/"/>
+  </url>
+  <url><loc>https://ui.skribly.pl/pl/components/shell/splitpane/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/shell/splitpane/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://ui.skribly.pl/pl/components/shell/splitpane/"/>
   </url>
   <url><loc>https://ui.skribly.pl/components/shell/splitview/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ui.skribly.pl/components/shell/splitview/"/>
